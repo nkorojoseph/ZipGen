@@ -1,0 +1,30 @@
+
+  {
+    "name": "Zip Gen",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+        "matches": [
+            "<all_urls>"
+            ],
+        "js": ["contentScript.js"]
+
+        }
+      ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activeTab"
+      ],
+      "browser_action": {
+        "default_icon": {                   
+          "16": "images/icon.png",          
+          "24": "images/icon.png",           
+          "32": "images/icon.png"            
+        },
+        "default_title": "Google Mail",     
+        "default_popup": "popup.html"        
+      }
+}
